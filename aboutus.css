@@ -1,0 +1,251 @@
+*{
+  box-sizing: border-box;
+  }
+
+  body{
+  background: cornsilk;
+  margin: 0;
+  padding: 0;
+  }
+
+  .header-container{
+    width: 90%;
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content:space-between;
+    } 
+
+header{
+  padding: 20px;
+}
+
+#logo{
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  margin: 0;
+}
+
+#redcolor{
+  color: red;
+  font-family: 'Updock', cursive;
+  text-transform: lowercase;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li{
+  margin-left: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+li a:hover, li a:focus{
+  background-color: #ffffff;
+}
+
+.search input[type=search] {
+  width: 80%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('twotone_search_black_24dp.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.search{
+  padding-right:14px;
+}
+
+
+.about-container{
+  background-image: url("https://media.istockphoto.com/photos/happy-young-asian-woman-in-colorful-yellow-color-casual-clothes-and-picture-id1295727275?b=1&k=20&m=1295727275&s=170667a&w=0&h=04c-SBeakm82aVnuIfchJDVPALZwu55qZH5kE60692g=");
+  height: 450px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.about-container .about-content{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0,0,0,0.5);
+  color: #ffffff;
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  }
+  
+  .about-content{
+    text-align:center
+  }
+  
+  .about-text{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: 'Didot';
+  }
+  
+  .about-description{
+    font-family: 'calibri';
+    font-size: 20px;
+  }
+
+  
+  footer{
+ 
+    background-color: #91ADC2;
+     border-top: 1px solid black;
+     margin: 50px 0;
+  }
+  
+  .footerbox-container{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    padding: 15px;
+    column-width: auto;
+  }
+  
+  .box-1,.box-2,.box-3,box-4,.box-5{
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+  
+  .box-2 h3{
+    text-align: center;
+  }
+  
+  .box-4 h3{
+    text-align: center;
+  }
+  
+  .footer-address{
+    margin-top: 20px;
+  }
+  
+  .footer-address div > span{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 100;
+  
+  }
+  
+  .footer-links a{
+    color: black;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Anek Gujarati', sans-serif;
+  }
+  
+  .footer-links li{
+    list-style-type: none;
+    color: #ffffff;
+    margin: 10px;
+    text-align: center;
+    padding-right: 20px;
+  }
+  
+  
+  .footer-links a:hover{
+    background-color:gray;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+
+    *{
+      box-sizing: border-box;
+    }
+    
+    body{
+      background: cornsilk;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header-container{
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      flex-direction: column;
+    } 
+    
+    .container-nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    header{
+      padding: 0.8em 0;
+      flex-direction: column;
+    box-shadow: 2px 2px 10px #f1f6f9;
+    }
+    
+    #logo{
+      font-family: 'Playfair Display', serif;
+      text-decoration: none;
+      text-align: center;
+      width: 200px;
+      margin: 0;
+    }
+    
+    #redcolor{
+      color: red;
+      font-family: 'Updock', cursive;
+      text-transform: lowercase;
+    }
+    
+    nav ul{
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    nav li{
+        margin-right: 50px;
+    }
+    
+    nav a{
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      text-align: center;
+    }
+    
+    li a:hover, li a:focus{
+      background-color: #ffffff;
+    }
+
+    .footerbox-container{
+      display: grid;
+     grid-template-columns: repeat(2,1fr);
+     padding: 15px;
+     margin-right: 80px;
+     margin-left: 0;
+   }
